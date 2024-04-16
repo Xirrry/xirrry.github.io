@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 	<title></title>
 	<script type="text/javascript">
 		function cccc() {
@@ -10,11 +11,16 @@
 			window.open("https://store.trionworlds.com/commerce/voucher/redeem-voucher-flow?voucherCode=MPJ7LFWPP7FFY9QWGF6Q","_Blank").location
 			window.open("https://store.trionworlds.com/commerce/voucher/redeem-voucher-flow?voucherCode=PIGDEED","_Blank").location
 			window.open("https://store.trionworlds.com/commerce/voucher/redeem-voucher-flow?voucherCode=6Q6XDD3Z3MWN6LWL66XE","_Blank").location
-			window.open("https://store.trionworlds.com/commerce/voucher/redeem-voucher-flow?voucherCode=CFW6GRQTJX7RKMYZ6ZJT&request_locale=en&experience=aaf","_Blank").location
+			var friendcode = $("#friendcode").val()
+			console.log(friendcode)
+			window.open("https://store.trionworlds.com/commerce/voucher/redeem-voucher-flow?voucherCode="+friendcode+"&request_locale=en&experience=aaf","_Blank").location
 		}
 	</script>
 </head>
 <body>
+	好友邀请码: <input type="text" name="" id="friendcode" value="CFW6GRQTJX7RKMYZ6ZJT">
+	<br>
+	<br>
 	<button style="width:1880px;height:880px" onclick="cccc();" id="111">兑换</button>
 </body>
 </html>
